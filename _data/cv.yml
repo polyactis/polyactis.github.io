@@ -2,38 +2,39 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Yu S. Huang/黄宇
     - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      value: Chinese, English
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior Director of Bioinformatics
+      institution: Genecast Biotechnology Corp Ltd, Wuxi/Shanghai/Beijing, China
+      year: 2022 -
+      description:
+        - Description 1.
+    - title: Professor/Principal Investigator, Director of Bioinformatics
+      institution: Shanghai Institute of Materia Medica), Chinese Academy of Sciences 中科院
+      year: 2015 - (on leave)
+      description:
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+    - title: Bioinformatics Scientist
+      institution: Illumina Inc., San Diego, California, USA
+      year: 2014-2015
+      description:
+        - Description 1.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computational Biology and Bioinformatics
+      institution: University of Southern California, Los Angeles, USA
+      year: 2010
       description:
         - Description 1.
         - Description 2.
@@ -41,43 +42,48 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: B.S. in Biology
+      institution: Fudan University, Shanghai, China
+      year: 2003
       description:
         - Description 1.
         - Description 2.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/polyactis/accucopy">Accucopy</a>
+      year: 2017-now
+      description: A computational method that infers Allele-specific Copy Number alterations from low-coverage low-purity tumor sequencing Data.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - 江苏省双创人才、江苏省无锡市太湖人才
+    - year: 2016
       items:
-        - Max Planck Medal
+        - China Thousand-Talent Program
+    - year: 2015
+      items:
+        - Hundred-Talent Program of Chinese Academy of Sciences
+    - year: 2003-2008
+      items:
+        - Merit Award Fellowship, University of Southern California.
+    - year: 2022
+      items: 
+        - Third Award, Computer Programming Contest, Fudan University.
+    - year: 1999-2003
+      items:
+        - People's Scholarship, Fudan University.
+    - year: 1998
+      items:
+        - Third Award, National High School Mathematics Competition of China.
+    - year: 1996
+      items:
+        - Third Award, Junior High School Physics Competition, Shanghai.
 
 - title: Academic Interests
   type: nested_list
@@ -94,4 +100,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Surf, Snowboard, etc.

@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Yu S. Huang 黄宇",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "",
+    "phone": "",
+    "url": "https://polyactis.github.io/",
+    "summary": "A modeller and algorithm developer",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",

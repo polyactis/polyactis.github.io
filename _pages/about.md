@@ -9,9 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Shanghai/Beijing, China</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
@@ -19,8 +17,25 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Since 2022, I have been Senior Director of Bioinformatics at [Genecast Corp Ltd.](https://www.genecast.com.cn/) From 2015, I have been a Principal Investigator and Director of Bioinformatics at Shanghai Institute of Materia Medica (SIMM) Chinese Academy of Sciences. My interest is developing fast and accurate models, algorithms, distributed computing platforms, and larg-scale databases in bioinformatics, AI-aided drug design, other data-modelling fields.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I was formerly a bioinformatics scientist at [Illumina Inc](http://www.illumina.com/) (San Diego site), and PostDoc at Human Genetics, UCLA. I completed my Ph.D. in Computational Biology and Bioinformatics at USC, working primarily on statistical methods in association mapping and population genetics of Arabidopsis thaliana, under the supervision of Magnus Nordborg. I had also worked on gene function/network inference graph theory algorithms. Being in a PhD program founded by a mathematician (M.S. Waterman), I learnt all I can about statistics and probability. In July 2003, I received B.S. of Biology from Fudan University. Fascinated with computers since I tested my first BASIC program on an Intel-8088 PC in my 8th grade, I learnt C/C++, PostgreSQL, Java, Python, and everything about Linux in my undergraduate.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my spare time, I read broadly and enjoy sports that involve elongated boards: surfboards, skateboards (Original Apex 34, Landyachtz Grom Race, Dinghy), and snowboards.
+
+
+
+GitHub: https://github.com/polyactis.
+
+Expertise: Bioinformatics, Machine/Deep/Statistical Learning, AI Drug Design, Optimization, Distributed Computing
+
+Programming: Python, C/C++, Rust, SQL, shell, R, awk
+
+Occasional: GO, C#, Vue.js, Java, Julia, PHP, Perl, FORTRAN, Pascal, MATLAB
+
+Library: Parallel-Computing (open-MPI, MPICH), Boost C++ Library, Pegasus workflow system
+
+SysAdmin: PostgreSQL, MySQL DB, Lustre FS, zfs, NFS, Ceph, LDAP, K8S, Kubeflow, iptables, NGINX
+
+A newer site may be found at http://www.yfish.org/. 
+

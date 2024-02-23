@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - polyactis
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - polyactis/accucopy
+  - polyactis/eGADA
+  - polyactis/rust-book
+  - polyactis/math508FilteringTheory
+  - polyactis/rethinking-2ed-julia
+
