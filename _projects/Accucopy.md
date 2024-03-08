@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Accucopy
-description: Accucopy (Fan et al. 2021)
+description: A computational method that infers Allele-Specific Copy Number alterations from low-coverage low-purity tumor sequencing data.
 img: assets/img/12.jpg
 importance: 1
 category: work
