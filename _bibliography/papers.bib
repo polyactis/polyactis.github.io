@@ -3,85 +3,95 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
+@article{Huang2023eGADA,
+  abbr={eGADA},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  title={eGADA: enhanced Genomic Alteration Detection Algorithm, a fast Sparse-Bayesian-Learning based genomic segmentation algorithm},
+  author={Huang, YS},
+  abstract={eGADA is an enhanced version of GADA, which is a fast segmentation algorithm utilizing the Sparse Bayesian Learning (or Relevance Vector Machine) technique from Tipping 2001. It can be applied to array intensity data, NGS sequencing coverage data, or any sequential data that displays characteristics of stepwise functions. Improvements by eGADA over GADA include: a) a customized Red-Black tree to significantly expedite the final backward elimination step of GADA; b) code in C++, which is safer and better structured than C; c) use Boost libraries extensively to provide user-friendly help and commandline argument processing; d) user-friendly input and output formats; e) export a dynamic library eGADA.so (packaged via Boost.Python) that offers API to Python; f) some bug fixes/optimization. The code is published at https://github.com/polyactis/eGADA.},
+  journal={BioRxiv},
+  year={2023},
+  publisher={bioRxiv},
+  preview={brownian-motion.gif},
+  doi={10.1101/2023.08.20.553622},
+  url={https://doi.org/10.1101/2023.08.20.553622},
+  html={https://doi.org/10.1101/2023.08.20.553622},
+  pdf={Huang_2023_eGADA.pdf},
+  dimensions={true},
+  selected={true}
 }
 
 @article{Fan2021Accucopy,
-  abbr={BMCBioinfo},
+  abbr={Accucopy},
   bibtex_show={true},
   title={Accucopy: Accurate and Fast Inference of Allele-specific Copy Number Alterations from Low-coverage Low-purity Tumor Sequencing Data},
   author={Fan, X and Luo, G and Huang, YS},
   journal={BMC Bioinformatics},
+  abstract={Background
+Copy number alterations (CNAs), due to their large impact on the genome, have been an important contributing factor to oncogenesis and metastasis. Detecting genomic alterations from the shallow-sequencing data of a low-purity tumor sample remains a challenging task.
+
+Results
+We introduce Accucopy, a method to infer total copy numbers (TCNs) and allele-specific copy numbers (ASCNs) from challenging low-purity and low-coverage tumor samples. Accucopy adopts many robust statistical techniques such as kernel smoothing of coverage differentiation information to discern signals from noise and combines ideas from time-series analysis and the signal-processing field to derive a range of estimates for the period in a histogram of coverage differentiation information. Statistical learning models such as the tiered Gaussian mixture model, the expectation–maximization algorithm, and sparse Bayesian learning were customized and built into the model. Accucopy is implemented in C++ /Rust, packaged in a docker image, and supports non-human samples, more at http://www.yfish.org/software/.
+
+Conclusions
+We describe Accucopy, a method that can predict both TCNs and ASCNs from low-coverage low-purity tumor sequencing data. Through comparative analyses in both simulated and real-sequencing samples, we demonstrate that Accucopy is more accurate than Sclust, ABSOLUTE, and Sequenza.},
   doi={10.1186/s12859-020-03924-5},
   url={https://doi.org/10.1186/s12859-020-03924-5},
   html={https://doi.org/10.1186/s12859-020-03924-5},
   pdf={Fan_2021_Accucopy_published.pdf},
   year={2021},
   publisher={BMC},
-  selected={true}
+  dimensions={true},
+  selected={true},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
+@article{Zhou2022Deffini,
+  abbr={Deffini},
+  bibtex_show={true},
+  title={Deffini: A family-specific deep neural network model for structure-based virtual screening},
+  author={Zhou, D and Liu, F and Zheng, Y and Hu, L and Huang, T and Huang, YS},
+  abstract={Deep learning-based virtual screening methods have been shown to significantly improve the accuracy of traditional docking-based virtual screening methods. In this paper, we developed Deffini, a structure-based virtual screening neural network model. During training, Deffini learns protein-ligand docking poses to distinguish actives and decoys and then to predict whether a new ligand will bind to the protein target. Deffini outperformed Smina with an average AUC ROC of 0.92 and AUC PRC of 0.44 in 3-fold cross-validation on the benchmark dataset DUD-E. However, when tested on the maximum unbiased validation (MUV) dataset, Deffini achieved poor results with an average AUC ROC of 0.517. We used the family-specific training approach to train the model to improve the model performance and concluded that family-specific models performed better than the pan-family models. To explore the limits of the predictive power of the family-specific models, we constructed Kernie, a new protein kinase dataset consisting of 358 kinases. Deffini trained with the Kernie dataset outperformed all recent benchmarks on the MUV kinases, with an average AUC ROC of 0.745, which highlights the importance of quality datasets in improving the performance of deep neural network models and the importance of using family-specific models.},
+  journal={Computers in Biology and Medicine},
+  year={2022},
+  doi={10.1016/j.compbiomed.2022.106323},
+  url={https://doi.org/10.1016/j.compbiomed.2022.106323},
+  html={https://doi.org/10.1016/j.compbiomed.2022.106323},
+  pdf={Zhou_2022_Deffini.pdf},
   dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
   selected={false}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@article{Hu_2022_UMI_ctDNA,
+  abbr={UMI_ctDNA},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  title={Processing UMI Datasets at High Accuracy and Efficiency with the Sentieon ctDNA Analysis Pipeline},
+  author={Hu, J and Jiang, C and Huang, YS and Chen, HD and Feng, H and Freedman, D and Qu, Y and Fan, R and Su, Z and Chen, W},
+  abstract={Liquid biopsy enables identification of low allele frequency (AF) tumor variants and novel clinical applications such as minimum residual disease (MRD) monitoring. However, challenges remain, primarily due to limited sample volume and low read count of low-AF variants. Because of the low AFs, some clinically significant variants are difficult to distinguish from errors introduced by PCR amplification and sequencing. Unique Molecular Identifiers (UMIs) have been developed to further reduce base error rates and improve the variant calling accuracy, which enables better discrimination between background errors and real somatic variants. While multiple UMI-aware ctDNA analysis pipelines have been published and adopted, their accuracy and runtime efficiency could be improved.
+
+In this study, we present the Sentieon ctDNA pipeline, a fast and accurate solution for small somatic variant calling from ctDNA sequencing data. The pipeline consists of four core modules: alignment, consensus generation, variant calling, and variant filtering. We benchmarked the ctDNA pipeline using both simulated and real datasets, and found that the Sentieon ctDNA pipeline is more accurate than alternatives.},
+  journal={bioRxiv},
+  year={2022},
+  doi={10.1101/2022.06.03.494742},
+  url={https://doi.org/10.1101/2022.06.03.494742},
+  html={https://doi.org/10.1101/2022.06.03.494742},
+  pdf={Hu_2022_UMI_ctDNA.pdf},
+  dimensions={true},
+  selected={false}
+}
+
+@article{Atwell_2010_GWAS,
+  abbr={Thaliana_GWAS},
+  bibtex_show={true},
+  title={Genome-wide association study of 107 phenotypes in a common set of Arabidopsis thaliana inbred lines},
+  author={Atwell, S and Huang, YS and etal},
+  abstract={Although pioneered by human geneticists as a potential solution to the challenging problem of finding the genetic basis of common human diseases1,2, genome-wide association (GWA) studies have, owing to advances in genotyping and sequencing technology, become an obvious general approach for studying the genetics of natural variation and traits of agricultural importance. They are particularly useful when inbred lines are available, because once these lines have been genotyped they can be phenotyped multiple times, making it possible (as well as extremely cost effective) to study many different traits in many different environments, while replicating the phenotypic measurements to reduce environmental noise. Here we demonstrate the power of this approach by carrying out a GWA study of 107 phenotypes in Arabidopsis thaliana, a widely distributed, predominantly self-fertilizing model plant known to harbour considerable genetic variation for many adaptively important traits3. Our results are dramatically different from those of human GWA studies, in that we identify many common alleles of major effect, but they are also, in many cases, harder to interpret because confounding by complex genetics and population structure make it difficult to distinguish true associations from false. However, a-priori candidates are significantly over-represented among these associations as well, making many of them excellent candidates for follow-up experiments. Our study demonstrates the feasibility of GWA studies in A. thaliana and suggests that the approach will be appropriate for many other organisms.},
+  journal={Nature},
+  year={2010},
+  doi={10.1038/nature08800},
+  url={https://doi.org/10.1038/nature08800},
+  html={https://doi.org/10.1038/nature08800},
+  pdf={Atwell_2010_GWAS.pdf},
+  dimensions={true},
+  selected={false}
 }
