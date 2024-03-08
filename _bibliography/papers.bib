@@ -12,7 +12,7 @@
   journal={BioRxiv},
   year={2023},
   publisher={bioRxiv},
-  preview={brownian-motion.gif},
+  preview={Huang_2023_Fig1_eGADA_vs_GADA.png},
   doi={10.1101/2023.08.20.553622},
   url={https://doi.org/10.1101/2023.08.20.553622},
   html={https://doi.org/10.1101/2023.08.20.553622},
@@ -21,28 +21,20 @@
   selected={true}
 }
 
-@article{Fan2021Accucopy,
-  abbr={Accucopy},
+@article{Fan2023Accucopy_vs_others,
+  abbr={Accucopy_vs_others},
   bibtex_show={true},
-  title={Accucopy: Accurate and Fast Inference of Allele-specific Copy Number Alterations from Low-coverage Low-purity Tumor Sequencing Data},
-  author={Fan, X and Luo, G and Huang, YS},
-  journal={BMC Bioinformatics},
-  abstract={Background
-Copy number alterations (CNAs), due to their large impact on the genome, have been an important contributing factor to oncogenesis and metastasis. Detecting genomic alterations from the shallow-sequencing data of a low-purity tumor sample remains a challenging task.
-
-Results
-We introduce Accucopy, a method to infer total copy numbers (TCNs) and allele-specific copy numbers (ASCNs) from challenging low-purity and low-coverage tumor samples. Accucopy adopts many robust statistical techniques such as kernel smoothing of coverage differentiation information to discern signals from noise and combines ideas from time-series analysis and the signal-processing field to derive a range of estimates for the period in a histogram of coverage differentiation information. Statistical learning models such as the tiered Gaussian mixture model, the expectation–maximization algorithm, and sparse Bayesian learning were customized and built into the model. Accucopy is implemented in C++ /Rust, packaged in a docker image, and supports non-human samples, more at http://www.yfish.org/software/.
-
-Conclusions
-We describe Accucopy, a method that can predict both TCNs and ASCNs from low-coverage low-purity tumor sequencing data. Through comparative analyses in both simulated and real-sequencing samples, we demonstrate that Accucopy is more accurate than Sclust, ABSOLUTE, and Sequenza.},
-  doi={10.1186/s12859-020-03924-5},
-  url={https://doi.org/10.1186/s12859-020-03924-5},
-  html={https://doi.org/10.1186/s12859-020-03924-5},
-  pdf={Fan_2021_Accucopy_published.pdf},
-  year={2021},
-  publisher={BMC},
+  title={Performance comparison of Accucopy, Sequenza, and ControlFreeC},
+  author={Fan, X and Huang, YS},
+  journal={bioRxiv},
+  abstract={Copy number alterations (CNAs) are an important type of genomic aberrations. It plays an important role in tumor pathogenesis and progression of cancer. It is important to detect regions of the cancer genome where copy number changes occur, which may provide clues that drive cancer progression. Deep sequencing technology provides genomic data at single-nucleotide resolution and is considered a better technique for detecting CNAs. There are currently many CNA-detection algorithms developed for whole genome sequencing (WGS) data. However, their detection capabilities have not been systematically investigated. Therefore, we selected three algorithms: Accucopy, Sequenza, and ControlFreeC, and applied them to data simulated under different settings. The results indicate that: 1) the correct inference of tumor sample purity is crucial to the inference of CNAs. If the tumor purity is wrongly inferred, the CNA detection will fail. 2) Higher sequencing depth and abundance of CNAs can improve performance. 3) Under the settings tested (sequencing depth at 5X or 30X, purity from 0.1 to 0.9, existence of subclones or not), Accucopy is the best-performing algorithm overall. For coverage=5X samples, ControlFreeC requires tumor purity to be above 50% to perform well. Sequenza can only perform well in high-coverage and more-CNA samples.},
+  doi={10.1101/2023.09.03.556123},
+  url={https://doi.org/10.1101/2023.09.03.556123},
+  html={https://doi.org/10.1101/2023.09.03.556123},
+  pdf={Fan_Huang_2023_Accucopy_vs_Sequenza_ControlFreeC.pdf},
+  year={2023},
   dimensions={true},
-  selected={true},
+  selected={false},
 }
 
 @article{Zhou2022Deffini,
@@ -80,6 +72,30 @@ In this study, we present the Sentieon ctDNA pipeline, a fast and accurate solut
   selected={false}
 }
 
+@article{Fan2021Accucopy,
+  abbr={Accucopy},
+  bibtex_show={true},
+  title={Accucopy: Accurate and Fast Inference of Allele-specific Copy Number Alterations from Low-coverage Low-purity Tumor Sequencing Data},
+  author={Fan, X and Luo, G and Huang, YS},
+  journal={BMC Bioinformatics},
+  abstract={BACKGROUND:
+Copy number alterations (CNAs), due to their large impact on the genome, have been an important contributing factor to oncogenesis and metastasis. Detecting genomic alterations from the shallow-sequencing data of a low-purity tumor sample remains a challenging task.
+
+RESULTS: 
+We introduce Accucopy, a method to infer total copy numbers (TCNs) and allele-specific copy numbers (ASCNs) from challenging low-purity and low-coverage tumor samples. Accucopy adopts many robust statistical techniques such as kernel smoothing of coverage differentiation information to discern signals from noise and combines ideas from time-series analysis and the signal-processing field to derive a range of estimates for the period in a histogram of coverage differentiation information. Statistical learning models such as the tiered Gaussian mixture model, the expectation–maximization algorithm, and sparse Bayesian learning were customized and built into the model. Accucopy is implemented in C++ /Rust, packaged in a docker image, and supports non-human samples, more at http://www.yfish.org/software/.
+
+CONCLUSIONS: 
+We describe Accucopy, a method that can predict both TCNs and ASCNs from low-coverage low-purity tumor sequencing data. Through comparative analyses in both simulated and real-sequencing samples, we demonstrate that Accucopy is more accurate than Sclust, ABSOLUTE, and Sequenza.},
+  doi={10.1186/s12859-020-03924-5},
+  url={https://doi.org/10.1186/s12859-020-03924-5},
+  html={https://doi.org/10.1186/s12859-020-03924-5},
+  pdf={Fan_2021_Accucopy.pdf},
+  year={2021},
+  publisher={BMC},
+  dimensions={true},
+  selected={true},
+}
+
 @article{Atwell_2010_GWAS,
   abbr={Thaliana_GWAS},
   bibtex_show={true},
@@ -91,7 +107,7 @@ In this study, we present the Sentieon ctDNA pipeline, a fast and accurate solut
   doi={10.1038/nature08800},
   url={https://doi.org/10.1038/nature08800},
   html={https://doi.org/10.1038/nature08800},
-  pdf={Atwell_2010_GWAS.pdf},
+  pdf={Atwell_Huang_2010_GWAS.pdf},
   dimensions={true},
   selected={false}
 }
