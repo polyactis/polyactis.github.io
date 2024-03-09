@@ -19,8 +19,6 @@
       year: 2015 - (on leave)
       description:
         - Description 1.
-        - Description 2.
-        - title: Description 3.
           contents:
             - Sub-description 1.
     - title: Bioinformatics Scientist
@@ -37,11 +35,9 @@
       year: 2010
       description:
         - Description 1.
-        - Description 2.
         - title: Description 3.
           contents:
             - Sub-description 1.
-            - Sub-description 2.
     - title: B.S. in Biology
       institution: Fudan University, Shanghai, China
       year: 2003
@@ -88,11 +84,9 @@
     - title: Topic 1.
       items:
         - Description 1.
-        - Description 2.
     - title: Topic 2.
       items:
         - Description 1.
-        - Description 2.
 
 - title: Other Interests
   type: list

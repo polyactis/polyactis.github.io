@@ -9,9 +9,8 @@
   title={eGADA: enhanced Genomic Alteration Detection Algorithm, a fast Sparse-Bayesian-Learning based genomic segmentation algorithm},
   author={Huang, YS},
   abstract={eGADA is an enhanced version of GADA, which is a fast segmentation algorithm utilizing the Sparse Bayesian Learning (or Relevance Vector Machine) technique from Tipping 2001. It can be applied to array intensity data, NGS sequencing coverage data, or any sequential data that displays characteristics of stepwise functions. Improvements by eGADA over GADA include: a) a customized Red-Black tree to significantly expedite the final backward elimination step of GADA; b) code in C++, which is safer and better structured than C; c) use Boost libraries extensively to provide user-friendly help and commandline argument processing; d) user-friendly input and output formats; e) export a dynamic library eGADA.so (packaged via Boost.Python) that offers API to Python; f) some bug fixes/optimization. The code is published at https://github.com/polyactis/eGADA.},
-  journal={BioRxiv},
+  journal={bioRxiv},
   year={2023},
-  publisher={bioRxiv},
   preview={Huang_2023_Fig1_eGADA_vs_GADA.png},
   doi={10.1101/2023.08.20.553622},
   url={https://doi.org/10.1101/2023.08.20.553622},
@@ -28,6 +27,7 @@
   author={Fan, X and Huang, YS},
   journal={bioRxiv},
   abstract={Copy number alterations (CNAs) are an important type of genomic aberrations. It plays an important role in tumor pathogenesis and progression of cancer. It is important to detect regions of the cancer genome where copy number changes occur, which may provide clues that drive cancer progression. Deep sequencing technology provides genomic data at single-nucleotide resolution and is considered a better technique for detecting CNAs. There are currently many CNA-detection algorithms developed for whole genome sequencing (WGS) data. However, their detection capabilities have not been systematically investigated. Therefore, we selected three algorithms: Accucopy, Sequenza, and ControlFreeC, and applied them to data simulated under different settings. The results indicate that: 1) the correct inference of tumor sample purity is crucial to the inference of CNAs. If the tumor purity is wrongly inferred, the CNA detection will fail. 2) Higher sequencing depth and abundance of CNAs can improve performance. 3) Under the settings tested (sequencing depth at 5X or 30X, purity from 0.1 to 0.9, existence of subclones or not), Accucopy is the best-performing algorithm overall. For coverage=5X samples, ControlFreeC requires tumor purity to be above 50% to perform well. Sequenza can only perform well in high-coverage and more-CNA samples.},
+  preview={Fan_2023_F7.large.jpg},
   doi={10.1101/2023.09.03.556123},
   url={https://doi.org/10.1101/2023.09.03.556123},
   html={https://doi.org/10.1101/2023.09.03.556123},
@@ -50,7 +50,7 @@
   html={https://doi.org/10.1016/j.compbiomed.2022.106323},
   pdf={Zhou_2022_Deffini.pdf},
   dimensions={true},
-  selected={false}
+  selected={true}
 }
 
 
@@ -96,11 +96,75 @@ We describe Accucopy, a method that can predict both TCNs and ASCNs from low-cov
   selected={true},
 }
 
+
+@article{Luo2018Accurity,
+  abbr={Accurity},
+  bibtex_show={true},
+  title={Accurity: accurate tumor purity and ploidy inference from tumor-normal WGS data by jointly modelling somatic copy number alterations and heterozygous germline single-nucleotide-variants},
+  author={Luo, Z and Fan, X and Huang, YS},
+  abstract={MOTIVATION: 
+Tumor purity and ploidy have a substantial impact on next-gen sequence analyses of tumor samples and may alter the biological and clinical interpretation of results. Despite the existence of several computational methods that are dedicated to estimate tumor purity and/or ploidy from The Cancer Genome Atlas (TCGA) tumor-normal whole-genome-sequencing (WGS) data, an accurate, fast and fully-automated method that works in a wide range of sequencing coverage, level of tumor purity and level of intra-tumor heterogeneity, is still missing.
+
+RESULTS: 
+We describe a computational method called Accurity that infers tumor purity, tumor cell ploidy and absolute allelic copy numbers for somatic copy number alterations (SCNAs) from tumor-normal WGS data by jointly modelling SCNAs and heterozygous germline single-nucleotide-variants (HGSNVs). Results from both in silico and real sequencing data demonstrated that Accurity is highly accurate and robust, even in low-purity, high-ploidy and low-coverage settings in which several existing methods perform poorly. Accounting for tumor purity and ploidy, Accurity significantly increased signal/noise gaps between different copy numbers. We are hopeful that Accurity is of clinical use for identifying cancer diagnostic biomarkers.
+
+AVAILABILITY: 
+Accurity is implemented in C++/Rust, https://github.com/polyactis/Accurity.},
+  journal={Bioinformatics},
+  year={2018},
+  doi={10.1093/bioinformatics/bty043},
+  url={https://doi.org/10.1093/bioinformatics/bty043},
+  html={https://doi.org/10.1093/bioinformatics/bty043},
+  pdf={Luo_Huang_2018_Accurity.pdf},
+  dimensions={true},
+  selected={false}
+}
+
+@article{Huang2015Vervet,
+  abbr={VervetMonkeys},
+  bibtex_show={true},
+  title={Sequencing strategies and characterization of 721 vervet monkey genomes for future genetic analyses of medically relevant traits.},
+  author={Huang, YS and Ramensky, V and Service, SK and Jasinska, AJ and Jung, Y and Choi, OW and Cantor, RM and Juretic, N and Wasserscheid, J and Kaplan, JR and Jorgensen, MJ and Dyer, TD and Dewar, K and Blangero, J and Wilson, RK and Warren, W and Weinstock, GM and Freimer, NB},
+  abstract={BACKGROUND:
+We report here the first genome-wide high-resolution polymorphism resource for non-human primate (NHP) association and linkage studies, constructed for the Caribbean-origin vervet monkey, or African green monkey (Chlorocebus aethiops sabaeus), one of the most widely used NHPs in biomedical research. We generated this resource by whole genome sequencing (WGS) of monkeys from the Vervet Research Colony (VRC), an NIH-supported research resource for which extensive phenotypic data are available.
+
+RESULTS:
+We identified genome-wide single nucleotide polymorphisms (SNPs) by WGS of 721 members of an extended pedigree from the VRC. From high-depth WGS data we identified more than 4 million polymorphic unequivocal segregating sites; by pruning these SNPs based on heterozygosity, quality control filters, and the degree of linkage disequilibrium (LD) between SNPs, we constructed genome-wide panels suitable for genetic association (about 500,000 SNPs) and linkage analysis (about 150,000 SNPs). To further enhance the utility of these resources for linkage analysis, we used a further pruned subset of the linkage panel to generate multipoint identity by descent matrices.
+
+CONCLUSIONS:
+The genetic and phenotypic resources now available for the VRC and other Caribbean-origin vervets enable their use for genetic investigation of traits relevant to human diseases.},
+  journal={BMC Biology},
+  year={2015},
+  doi={10.1186/s12915-015-0152-2},
+  url={https://doi.org/10.1186/s12915-015-0152-2},
+  html={https://doi.org/10.1186/s12915-015-0152-2},
+  pdf={Huang_2015_Vervet.pdf},
+  dimensions={true},
+  selected={false}
+}
+
+@article{Huang2011GWASDB,
+  abbr={GWASDB},
+  bibtex_show={true},
+  title={Analysis and visualization of Arabidopsis thaliana GWAS using web 2.0 technologies},
+  author={Huang, YS and Horton, M and Vilhjálmsson, BJ and Seren, Ü and Meng, D and Meyer, C and Amer, MA and Borevitz, JO and Bergelson, J and Nordborg, M},
+  abstract={With large-scale genomic data becoming the norm in biological studies, the storing, integrating, viewing and searching of such data have become a major challenge. In this article, we describe the development of an Arabidopsis thaliana database that hosts the geographic information and genetic polymorphism data for over 6000 accessions and genome-wide association study (GWAS) results for 107 phenotypes representing the largest collection of Arabidopsis polymorphism data and GWAS results to date. Taking advantage of a series of the latest web 2.0 technologies, such as Ajax (Asynchronous JavaScript and XML), GWT (Google-Web-Toolkit), MVC (Model-View-Controller) web framework and Object Relationship Mapper, we have created a web-based application (web app) for the database, that offers an integrated and dynamic view of geographic information, genetic polymorphism and GWAS results. Essential search functionalities are incorporated into the web app to aid reverse genetics research. The database and its web app have proven to be a valuable resource to the Arabidopsis community. The whole framework serves as an example of how biological data, especially GWAS, can be presented and accessed through the web. In the end, we illustrate the potential to gain new insights through the web app by two examples, showcasing how it can be used to facilitate forward and reverse genetics research. Database: https://aragwas.1001genomes.org/},
+  journal={Database},
+  year={2011},
+  doi={10.1093/database/bar014},
+  url={https://doi.org/10.1093/database/bar014},
+  html={https://doi.org/10.1093/database/bar014},
+  pdf={Huang_2011_GWASDB.pdf},
+  dimensions={true},
+  selected={false}
+}
+
+
 @article{Atwell_2010_GWAS,
   abbr={Thaliana_GWAS},
   bibtex_show={true},
   title={Genome-wide association study of 107 phenotypes in a common set of Arabidopsis thaliana inbred lines},
-  author={Atwell, S and Huang, YS and etal},
+  author={Atwell, S and Huang, YS and Vilhjálmsson, BJ and Willems, G and Horton, M and Li, Y and Meng, D and Platt, A and Tarone, A and Hu, TT and Jiang, R and Muliyati, NW and Zhang, X and Amer, MA and Baxter, I and Brachi, B and Chory, J and Dean, C and Debieu, M and de Meaux, J and Ecker, JR and Faure, N and Kniskern, JM and Jones, JD and Michael, T and Nemri, A and Roux, F and Salt, DE and Tang, C and Todesco, M and Traw, MB and Weigel, D and Marjoram, P and Borevitz, JO and Bergelson, J and Nordborg, M},
   abstract={Although pioneered by human geneticists as a potential solution to the challenging problem of finding the genetic basis of common human diseases1,2, genome-wide association (GWA) studies have, owing to advances in genotyping and sequencing technology, become an obvious general approach for studying the genetics of natural variation and traits of agricultural importance. They are particularly useful when inbred lines are available, because once these lines have been genotyped they can be phenotyped multiple times, making it possible (as well as extremely cost effective) to study many different traits in many different environments, while replicating the phenotypic measurements to reduce environmental noise. Here we demonstrate the power of this approach by carrying out a GWA study of 107 phenotypes in Arabidopsis thaliana, a widely distributed, predominantly self-fertilizing model plant known to harbour considerable genetic variation for many adaptively important traits3. Our results are dramatically different from those of human GWA studies, in that we identify many common alleles of major effect, but they are also, in many cases, harder to interpret because confounding by complex genetics and population structure make it difficult to distinguish true associations from false. However, a-priori candidates are significantly over-represented among these associations as well, making many of them excellent candidates for follow-up experiments. Our study demonstrates the feasibility of GWA studies in A. thaliana and suggests that the approach will be appropriate for many other organisms.},
   journal={Nature},
   year={2010},
@@ -108,6 +172,24 @@ We describe Accucopy, a method that can predict both TCNs and ASCNs from low-cov
   url={https://doi.org/10.1038/nature08800},
   html={https://doi.org/10.1038/nature08800},
   pdf={Atwell_Huang_2010_GWAS.pdf},
+  dimensions={true},
+  selected={false}
+}
+
+@article{Huang2007NetworkAnnot,
+  abbr={NetworkAnnot},
+  bibtex_show={true},
+  title={Systematic discovery of functional modules and context-specific functional annotation of human genome},
+  author={Huang, YS and Li, H and Hu, H and Yan, X and Waterman, MS and Huang, H and Zhou, XJ},
+  abstract={MOTIVATION: The rapid accumulation of microarray datasets provides unique opportunities to perform systematic functional characterization of the human genome. We designed a graph-based approach to integrate cross-platform microarray data, and extract recurrent expression patterns. A series of microarray datasets can be modeled as a series of co-expression networks, in which we search for frequently occurring network patterns. The integrative approach provides three major advantages over the commonly used microarray analysis methods: (1) enhance signal to noise separation (2) identify functionally related genes without co-expression and (3) provide a way to predict gene functions in a context-specific way.
+
+RESULTS: We integrate 65 human microarray datasets, comprising 1105 experiments and over 11 million expression measurements. We develop a data mining procedure based on frequent itemset mining and biclustering to systematically discover network patterns that recur in at least five datasets. This resulted in 143 401 potential functional modules. Subsequently, we design a network topology statistic based on graph random walk that effectively captures characteristics of a gene's local functional environment. Function annotations based on this statistic are then subject to the assessment using the random forest method, combining six other attributes of the network modules. We assign 1126 functions to 895 genes, 779 known and 116 unknown, with a validation accuracy of 70%. Among our assignments, 20% genes are assigned with multiple functions based on different network environments.},
+  journal={Bioinformatics},
+  year={2007},
+  doi={10.1093/bioinformatics/btm222},
+  url={https://doi.org/10.1093/bioinformatics/btm222},
+  html={https://doi.org/10.1093/bioinformatics/btm222},
+  pdf={Huang_2007_NetworkAnnot.pdf},
   dimensions={true},
   selected={false}
 }
