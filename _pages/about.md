@@ -41,7 +41,7 @@ SysAdmin: PostgreSQL, MySQL DB, Lustre FS, zfs, NFS, Ceph, LDAP, K8S, Kubeflow, 
         {% include figure.liquid loading="eager" path="assets/img/surf at Hawaii.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Surf Barrel.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Surf_Barrel.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/5-surfboards.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
